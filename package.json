@@ -1,0 +1,22 @@
+{
+  "name": "nlw6-discover",
+  "version": "1.0.0",
+  "description": "Project developed to manage anonymous questions from users directed to the owner of the page. Developed at Next Level Week (Discover mission) by Rocketseat",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
+  },
+  "keywords": [],
+  "author": "RodrigoPiropo",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
