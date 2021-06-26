@@ -12,11 +12,16 @@ header{
     grid-area: header;
 }
 
-#bg{
+.bg{
     grid-area: left;
 
     background: url('/images/home-bg-img.svg') no-repeat top/contain;
     background-position-x: -10rem;
+}
+
+.bg.notfound{
+    background: url('/images/notfound.svg') no-repeat top/contain;
+    margin-right: 1rem;
 }
 
 main{

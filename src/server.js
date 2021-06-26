@@ -14,4 +14,14 @@ server.use(express.urlencoded({extended: true}))
 
 server.use(route)
 
+server.use(function(req, res, next) {
+    res.status(404);
+  
+    // respond with html page
+    if (req.accepts('html')) {
+      res.render('notfound', { url: req.url });
+      return;
+    }
+});
+
 server.listen(3000, () => console.log("Running"))
